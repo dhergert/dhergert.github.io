@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FL30KPC7Q4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-FL30KPC7Q4");
+    </script>
+
+    <style>
+      body {
+        font-family: Calibri, "Trebuchet MS", sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+
+      .header {
+        padding: 5px;
+      }
+
+      .left-item {
+        float: left;
+      }
+
+      .right-item {
+        float: right;
+      }
+
+      .main {
+        padding: 5px;
+        font-size: 12px;
+        clear: both;
+      }
+
+      svg {
+        padding: 0;
+      }
+
+      @media print {
+        .hide-on-print {
+          visibility: hidden;
+        }
+
+        .print-size {
+          width: 100%;
+        }
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <base href="/ball-rotation/v7" target="_blank" />
+  </head>
+  <body>
+    <script>
+      version = "v7";
+      $("body").load(version + "/index.html");
+    </script>
+  </body>
+</html>
