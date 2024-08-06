@@ -41,6 +41,39 @@
         padding: 0;
       }
 
+      .noteBoxes {
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+        width: 80%;
+      }
+
+      .warn {
+        border-color: #e76f51;
+        background-color: rgba(231, 111, 81, 0.1);
+      }
+
+      .note {
+        border-color: #a88808;
+        background-color: rgba(255, 255, 88, 0.509);
+      }
+
+      .info {
+        border-color: #0096c7;
+        background-color: rgba(0, 150, 199, 0.1);
+      }
+
+      .tip {
+        border-color: #00b353;
+        background-color: rgba(0, 179, 83, 0.1);
+      }
+
+      .picture {
+        width: 15px;
+        padding-right: 10px;
+      }
+
       @media print {
         .hide-on-print {
           visibility: hidden;
@@ -52,12 +85,17 @@
       }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      urlParams = new URLSearchParams(window.location.search);
+      version = urlParams.has("version") ? urlParams.get("version") : "v7";
+    </script>
 
-    <base href="/ball-rotation/v7" target="_blank" />
+    <script type="text/javascript">
+      document.write("<base href='/ball-rotation/" + version + "' target='_blank' />");
+    </script>
   </head>
   <body>
     <script>
-      version = "v7";
       $("body").load(version + "/index.html");
     </script>
   </body>
